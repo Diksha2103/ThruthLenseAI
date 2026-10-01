@@ -1,0 +1,69 @@
+{
+  "best_model": "Multinomial Naive Bayes",
+  "label_map": {
+    "0": "FAKE",
+    "1": "REAL"
+  },
+  "accuracy": 0.838,
+  "precision": 0.829,
+  "recall": 0.838,
+  "f1": 0.8274,
+  "cv_f1_mean": 0.827,
+  "cv_f1_std": 0.0049,
+  "confusion_matrix": [
+    [
+      542,
+      509
+    ],
+    [
+      195,
+      3099
+    ]
+  ],
+  "class_report": {
+    "FAKE": {
+      "precision": 0.7354138398914518,
+      "recall": 0.5156993339676499,
+      "f1-score": 0.6062639821029083,
+      "support": 1051.0
+    },
+    "REAL": {
+      "precision": 0.8589246119733924,
+      "recall": 0.9408014571948998,
+      "f1-score": 0.8980005795421617,
+      "support": 3294.0
+    },
+    "accuracy": 0.8379746835443038,
+    "macro avg": {
+      "precision": 0.7971692259324221,
+      "recall": 0.7282503955812749,
+      "f1-score": 0.752132280822535,
+      "support": 4345.0
+    },
+    "weighted avg": {
+      "precision": 0.829048933847243,
+      "recall": 0.8379746835443038,
+      "f1-score": 0.8274332230614585,
+      "support": 4345.0
+    }
+  },
+  "model_comparison": {
+    "Multinomial Naive Bayes": {
+      "accuracy": 0.838,
+      "precision": 0.829,
+      "recall": 0.838,
+      "f1": 0.8274,
+      "cv_mean": 0.827,
+      "cv_std": 0.0049
+    },
+    "Logistic Regression": {
+      "accuracy": 0.8375,
+      "precision": 0.8366,
+      "recall": 0.8375,
+      "f1": 0.8162,
+      "cv_mean": 0.8139,
+      "cv_std": 0.006
+    }
+  },
+  "dataset_note": "FakeNewsNet GossipCop split. Labels verified from source_domain distributions: 1=REAL (people.com, etonline.com), 0=FAKE (hollywoodlife.com, radaronline.com). Headlines are celebrity news articles."
+}
